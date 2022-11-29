@@ -1,0 +1,91 @@
+body {
+  /* background: url('http://i.imgur.com/Eor57Ae.jpg') no-repeat fixed center center; */
+  /* background: url('https://media.istockphoto.com/photos/gamer-work-space-concept-top-view-a-gaming-gear-mouse-keyboard-in-picture-id1208144925?k=20&m=1208144925&s=170667a&w=0&h=Ut0ik7JFHve9peMRz1MmAhEBkNoa-xIDmb1pSqzyGJo=') no-repeat fixed center center; */
+  background-color: rgb(221, 226, 239);
+  background-size: cover;
+  font-family: Montserrat;
+}
+
+.logo {
+  width: 213px;
+  height: 36px;
+  /* background: url('http://i.imgur.com/fd8Lcso.png') no-repeat; */
+  margin: 30px auto;
+}
+
+.login-block {
+  width: 320px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  border-top: 5px solid #3467eb;
+  margin: 0 auto;
+}
+
+.login-block h1 {
+  text-align: center;
+  color: #000;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.login-block input {
+  width: 100%;
+  height: 42px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-family: Montserrat;
+  padding: 0 20px 0 50px;
+  outline: none;
+}
+
+.login-block input#username {
+  background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px top no-repeat;
+  background-size: 16px 80px;
+}
+
+.login-block input#username:focus {
+  background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px bottom no-repeat;
+  background-size: 16px 80px;
+}
+
+.login-block input#password {
+  background: #fff url('http://i.imgur.com/Qf83FTt.png') 20px top no-repeat;
+  background-size: 16px 80px;
+}
+
+.login-block input#password:focus {
+  background: #fff url('http://i.imgur.com/Qf83FTt.png') 20px bottom no-repeat;
+  background-size: 16px 80px;
+}
+
+.login-block input:active, .login-block input:focus {
+  border: 1px solid #3467eb;
+}
+.login-block label{
+  width: 100%;
+  height: 40px;
+  display: block;
+  background: #3467eb;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #3467eb;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: Montserrat;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  line-height: 40px;
+}
+
+.login-block label:hover {
+  background: #3467eb;
+}

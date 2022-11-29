@@ -1,0 +1,24 @@
+RewriteEngine On
+
+RewriteRule "index.html" "index.php"
+RewriteRule "^([a-zA-Z0-9]+).html$" "?page=$1"
+RewriteRule "^product/brand-([0-9]+)/([0-9]+).html$" "?page=productdetail&idthuonghieu=$1&idsanpham=$2"
+
+RewriteRule "^category/([0-9]+).html$" "?page=product&iddanhmuc=$1"
+RewriteRule "^category/([0-9]+)/trang-([0-9]+).html$" "?page=product&iddanhmuc=$1&trang=$2"
+RewriteRule "^category/([0-9]+)/thongtin=([a-zA-Z0-9]+)/trang-([0-9]+).html$" "?page=product&iddanhmuc=$1&thongtin=$2&trang=$3"
+RewriteRule "^category-([0-9]+)/brand-([0-9]+).html$" "?page=product&iddanhmuc=$1&idthuonghieu=$2"
+
+RewriteRule "^category/([0-9]+)/field-([a-zA-Z0-9]+)/sort-([a-zA-Z0-9]+).html$" "?page=product&iddanhmuc=1&field=$2&sort=$3"
+RewriteRule "^category/([0-9]+)/field-([a-zA-Z0-9]+)/sort-([a-zA-Z0-9]+)/trang-([0-9]+).html$" "?page=product&iddanhmuc=1&field=$2&sort=$3&trang=$4"
+
+
+RewriteRule "^edit/([0-9]+).html$" "?page=editpass&idtaikhoan=$1"
+RewriteRule "^rating/([0-9]+).html$" "?page=rating&idsanpham=$1"
+
+RewriteRule "^order/user-([0-9]+)/([0-9]+).html$" "?page=order&user=$1&iddonhang=$2"
+RewriteRule "^orderlist/trang-([0-9]+).html$" "?page=orderlist&trang=$1"
+
+RewriteRule "^payment/donhang-([0-9]+).html$" "?page=payment&iddonhang=$1"
+
+
